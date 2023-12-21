@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="鬼車">
+      <UniqueIdentifier>{67da9c66-cc75-41c7-8370-3e9f89c28c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="鬼車\ソース">
+      <UniqueIdentifier>{fd9918a1-b9e6-47fc-9100-a187dcd1edee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="鬼車\ヘッダー">
+      <UniqueIdentifier>{d4ab163c-41cc-4b9a-a5a4-3511b55752a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClearButton.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="GetProcess.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ModDebugger.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="OnigRegex.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="RecieveButton.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexBox.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBox.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="TextLabel.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="WinForm.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\ascii.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\big5.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\cp1251.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_jp.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_kr.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_tw.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\gb18030.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_1.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_10.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_11.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_13.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_14.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_15.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_16.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_2.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_3.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_4.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_5.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_6.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_7.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_8.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_9.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\koi8.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\koi8_r.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regcomp.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regenc.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regerror.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regexec.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regext.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\reggnu.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regparse.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regposerr.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regposix.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regsyntax.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regtrav.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regversion.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\sjis.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\st.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\unicode.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf16_be.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf16_le.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf32_be.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf32_le.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf8.c">
+      <Filter>鬼車\ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClearButton.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="GetProcess.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ModDebugger.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="OnigRegex.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="RecieveButton.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexBox.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBox.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="TextLabel.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="WinForm.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="WinTarget.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>リソース</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\onigconfig.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\oniggnu.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\onigposix.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\oniguruma.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\regenc.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\regint.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\regparse.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\st.h">
+      <Filter>鬼車\ヘッダー</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ModDebuggerForWin.rc">
+      <Filter>リソース</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ModDebugger.ico">
+      <Filter>リソース</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

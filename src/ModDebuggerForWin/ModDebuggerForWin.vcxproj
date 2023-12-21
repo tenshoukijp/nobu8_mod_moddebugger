@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5632FBBC-49B4-478F-B036-B02961149D9C}</ProjectGuid>
+    <RootNamespace>ModDebuggerForWin</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>N8ModDebugger</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>CreanButton.cpp</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/D " WINDOWS_IGNORE_PACKING_MISMATCH" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile />
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ClearButton.cpp" />
+    <ClCompile Include="GetProcess.cpp" />
+    <ClCompile Include="ModDebugger.cpp" />
+    <ClCompile Include="OnigRegex.cpp" />
+    <ClCompile Include="oniguruma\ascii.c" />
+    <ClCompile Include="oniguruma\big5.c" />
+    <ClCompile Include="oniguruma\cp1251.c" />
+    <ClCompile Include="oniguruma\euc_jp.c" />
+    <ClCompile Include="oniguruma\euc_kr.c" />
+    <ClCompile Include="oniguruma\euc_tw.c" />
+    <ClCompile Include="oniguruma\gb18030.c" />
+    <ClCompile Include="oniguruma\iso8859_1.c" />
+    <ClCompile Include="oniguruma\iso8859_10.c" />
+    <ClCompile Include="oniguruma\iso8859_11.c" />
+    <ClCompile Include="oniguruma\iso8859_13.c" />
+    <ClCompile Include="oniguruma\iso8859_14.c" />
+    <ClCompile Include="oniguruma\iso8859_15.c" />
+    <ClCompile Include="oniguruma\iso8859_16.c" />
+    <ClCompile Include="oniguruma\iso8859_2.c" />
+    <ClCompile Include="oniguruma\iso8859_3.c" />
+    <ClCompile Include="oniguruma\iso8859_4.c" />
+    <ClCompile Include="oniguruma\iso8859_5.c" />
+    <ClCompile Include="oniguruma\iso8859_6.c" />
+    <ClCompile Include="oniguruma\iso8859_7.c" />
+    <ClCompile Include="oniguruma\iso8859_8.c" />
+    <ClCompile Include="oniguruma\iso8859_9.c" />
+    <ClCompile Include="oniguruma\koi8.c" />
+    <ClCompile Include="oniguruma\koi8_r.c" />
+    <ClCompile Include="oniguruma\regcomp.c" />
+    <ClCompile Include="oniguruma\regenc.c" />
+    <ClCompile Include="oniguruma\regerror.c" />
+    <ClCompile Include="oniguruma\regexec.c" />
+    <ClCompile Include="oniguruma\regext.c" />
+    <ClCompile Include="oniguruma\reggnu.c" />
+    <ClCompile Include="oniguruma\regparse.c" />
+    <ClCompile Include="oniguruma\regposerr.c" />
+    <ClCompile Include="oniguruma\regposix.c" />
+    <ClCompile Include="oniguruma\regsyntax.c" />
+    <ClCompile Include="oniguruma\regtrav.c" />
+    <ClCompile Include="oniguruma\regversion.c" />
+    <ClCompile Include="oniguruma\sjis.c" />
+    <ClCompile Include="oniguruma\st.c" />
+    <ClCompile Include="oniguruma\unicode.c" />
+    <ClCompile Include="oniguruma\utf16_be.c" />
+    <ClCompile Include="oniguruma\utf16_le.c" />
+    <ClCompile Include="oniguruma\utf32_be.c" />
+    <ClCompile Include="oniguruma\utf32_le.c" />
+    <ClCompile Include="oniguruma\utf8.c" />
+    <ClCompile Include="RecieveButton.cpp" />
+    <ClCompile Include="RegexBox.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="TextLabel.cpp" />
+    <ClCompile Include="WinForm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClearButton.h" />
+    <ClInclude Include="GetProcess.h" />
+    <ClInclude Include="ModDebugger.h" />
+    <ClInclude Include="OnigRegex.h" />
+    <ClInclude Include="oniguruma\onigconfig.h" />
+    <ClInclude Include="oniguruma\oniggnu.h" />
+    <ClInclude Include="oniguruma\onigposix.h" />
+    <ClInclude Include="oniguruma\oniguruma.h" />
+    <ClInclude Include="oniguruma\regenc.h" />
+    <ClInclude Include="oniguruma\regint.h" />
+    <ClInclude Include="oniguruma\regparse.h" />
+    <ClInclude Include="oniguruma\st.h" />
+    <ClInclude Include="RecieveButton.h" />
+    <ClInclude Include="RegexBox.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="TextBox.h" />
+    <ClInclude Include="TextLabel.h" />
+    <ClInclude Include="WinForm.h" />
+    <ClInclude Include="WinTarget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ModDebugger.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ModDebuggerForWin.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
